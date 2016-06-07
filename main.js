@@ -1,6 +1,9 @@
+// window.node(divNode)
 
 document.querySelector("#thanks button").addEventListener('click',function(){
   // TASK #1
+  var divNode = document.querySelector('.answer-box')
+  divNode.innerHTML = alert("yowch! don't click me so hard!")
 })
 
 document.querySelector("#double button").addEventListener('click',function(){
