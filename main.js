@@ -1,4 +1,4 @@
-window.pNode = document.querySelector('#circle-bw')
+window.blwUp = document.querySelector('.circle-red')
 
 
 document.querySelector("#thanks button").addEventListener('click',function(){
@@ -18,16 +18,27 @@ document.querySelector("#double button").addEventListener('click',function(){
 document.querySelector("#color-circle button").addEventListener('click',function(){
   // TASK #3
   var colorNode = document.querySelector('#circle-bw')
-  if (colorNode.style.backgroundColor != 'black') {
-  	return colorNode.style.backgroundColor = 'black'
-  	}
-  	else {
-  		return colorNode.style.backgroundColor = 'white'
-  	}
+  if (colorNode.style.background != 'black') {
+	return colorNode.style.background = 'black'
+	}
+	else {
+		return colorNode.style.background = 'white'
+		}
 })
 
 document.querySelector("#blow-up button").addEventListener('click',function(){
   // TASK #4}
+  var blwUp = document.querySelector('.circle-red')
+  var cicrleStyle = window.getComputedStyle(blwUp)
+  var cirWidth = parseInt(cicrleStyle.width)
+  var cirHeight = parseInt(cicrleStyle.height)
+  if (cirHeight && cirWidth <= 320) {
+  	blwUp.style.width = (cirWidth * 2) + 'px'
+  	blwUp.style.height = (cirHeight * 2) + 'px'
+  } else {
+  	blwUp.style.width = '40px'
+  	blwUp.style.height = '40px'
+  }
 })
 
 document.querySelector("#remove button").addEventListener('click',function(){
