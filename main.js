@@ -1,9 +1,10 @@
-// window.node(divNode)
+window.pNode = document.querySelector('#circle-bw')
+
 
 document.querySelector("#thanks button").addEventListener('click',function(){
   // TASK #1
   var divNode = document.querySelector('.answer-box')
-  divNode.innerHTML = alert("yowch! don't click me so hard!")
+  alert("yowch! don't click me so hard!")
 })
 
 document.querySelector("#double button").addEventListener('click',function(){
@@ -16,6 +17,13 @@ document.querySelector("#double button").addEventListener('click',function(){
 
 document.querySelector("#color-circle button").addEventListener('click',function(){
   // TASK #3
+  var colorNode = document.querySelector('#circle-bw')
+  if (colorNode.style.backgroundColor != 'black') {
+  	return colorNode.style.backgroundColor = 'black'
+  	}
+  	else {
+  		return colorNode.style.backgroundColor = 'white'
+  	}
 })
 
 document.querySelector("#blow-up button").addEventListener('click',function(){
