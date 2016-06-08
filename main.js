@@ -1,5 +1,4 @@
-window.blwUp = document.querySelector('.circle-red')
-
+window.rvSquare = document.querySelectorAll('.answer-box * span')
 
 document.querySelector("#thanks button").addEventListener('click',function(){
   // TASK #1
@@ -45,21 +44,35 @@ document.querySelector("#remove button").addEventListener('click',function(){
   // TASK #5
   var ulNode = document.querySelector('.answer-box > ul')
   var liNodes = document.querySelectorAll('li')
-  	for (var i = 0; i < liNodes.length; i++) {
-  		var liNode = liNodes[i]
-  		if (liNode.classList.contains('inactive')) {
+  for (var i = 0; i < liNodes.length; i++) {
+	var liNode = liNodes[i]
+	if (liNode.classList.contains('inactive')) {
   			ulNode.removeChild(liNode)
-			}
 		}
+	}
 })
 
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
+  var squaresNode=document.querySelector("#reverse-squares .answer-box" )
+
+   var allSquares=document.querySelectorAll("span")
+   // console.log(allSquares)
+   // var newArray=[]
+   for(var i=allSquares.length-1;i>=0; i--){
+       console.log(allSquares[i])
+       squaresNode.appendChild(allSquares[i])
+
+   }
+
+   console.log(newArray)
+
 })
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
+
 })
 
 document.querySelector("#cycle-image button").addEventListener('click',function(){
