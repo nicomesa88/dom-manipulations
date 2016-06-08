@@ -1,4 +1,3 @@
-window.rvSquare = document.querySelectorAll('.answer-box * span')
 
 document.querySelector("#thanks button").addEventListener('click',function(){
   // TASK #1
@@ -42,7 +41,7 @@ document.querySelector("#blow-up button").addEventListener('click',function(){
 
 document.querySelector("#remove button").addEventListener('click',function(){
   // TASK #5
-  var ulNode = document.querySelector('.answers-box > ul')
+  var ulNode = document.querySelector('#userList')
   var liNodes = document.querySelectorAll('li')
   for (var i = 0; i < liNodes.length; i++) {
 	var liNode = liNodes[i]
@@ -50,12 +49,13 @@ document.querySelector("#remove button").addEventListener('click',function(){
   			ulNode.removeChild(liNode)
 		}
 	}
+	console.log(ulNode)
 })
 
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
-  var squaresNode=document.querySelector("#reverse-squares .answer-box" )
+  var squaresNode=document.querySelector("#reverse-squares > .answer-box" )
 
    var allSquares=document.querySelectorAll("span")
    // console.log(allSquares)
@@ -66,7 +66,7 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
 
    }
 
-   // console.log(newArray)
+   console.log(newArray)
 
 })
 
