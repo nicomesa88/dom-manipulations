@@ -42,7 +42,7 @@ document.querySelector("#blow-up button").addEventListener('click',function(){
 
 document.querySelector("#remove button").addEventListener('click',function(){
   // TASK #5
-  var ulNode = document.querySelector('.answer-box > ul')
+  var ulNode = document.querySelector('.answers-box > ul')
   var liNodes = document.querySelectorAll('li')
   for (var i = 0; i < liNodes.length; i++) {
 	var liNode = liNodes[i]
@@ -59,19 +59,28 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
 
    var allSquares=document.querySelectorAll("span")
    // console.log(allSquares)
-   // var newArray=[]
-   for(var i=allSquares.length-1;i>=0; i--){
+   var newArray=[]
+   for ( var i = allSquares.length - 1; i >= 0; i--){
        console.log(allSquares[i])
        squaresNode.appendChild(allSquares[i])
 
    }
 
-   console.log(newArray)
+   // console.log(newArray)
 
 })
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
+  var pigLtn = document.querySelector("#tasks ")
+  var rvStr= pigLtn.querySelectorAll("li")
+  // var newArray=[]
+  console.log(rvStr)
+   for ( var i = rvStr.length - 1; i >= 0; i--){
+       console.log(rvStr[i])
+       pigLtn.appendChild(rvStr[i])
+   }
+   console.log(pigLtn)
 
 })
 
