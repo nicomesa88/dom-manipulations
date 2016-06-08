@@ -55,7 +55,7 @@ document.querySelector("#remove button").addEventListener('click',function(){
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
-  var squaresNode=document.querySelector("#reverse-squares > .answer-box" )
+  var squaresNode=document.querySelector("#reverse-squares .answer-box" )
 
    var allSquares=document.querySelectorAll("span")
    // console.log(allSquares)
